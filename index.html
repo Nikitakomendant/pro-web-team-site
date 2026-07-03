@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRO WEB TEAM — Веб-дизайн и разработка</title>
+<meta name="description" content="Веб-дизайн, разработка сайтов и UI/UX для приложений и Web3-продуктов.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="progress-line" id="progressLine"></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo">PRO WEB TEAM</a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#services">Услуги</a>
+    <a href="#work">Работы</a>
+    <a href="#process">Процесс</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <a href="#contact" class="nav__cta">Обсудить проект</a>
+  <button class="nav__burger" id="burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__orb" id="orb"></div>
+    <p class="eyebrow reveal">WEB DESIGN &amp; DEVELOPMENT STUDIO — KHARKIV</p>
+    <h1 class="hero__title">
+      <span class="line" data-progress>Сайты и продукты,</span>
+      <span class="line" data-progress>к которым хочется</span>
+      <span class="line line--accent" data-progress>возвращаться</span>
+    </h1>
+    <p class="hero__sub reveal">
+      Веб-дизайн, разработка и UI/UX для брендов, которые не боятся выделяться —
+      от лендингов до Web3-продуктов.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+      <a href="#work" class="btn btn--ghost">Смотреть работы</a>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"><i></i></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee__track" id="marqueeTrack">
+      <span>HTML5</span><span>·</span><span>CSS3</span><span>·</span><span>JavaScript</span><span>·</span>
+      <span>Three.js</span><span>·</span><span>React</span><span>·</span><span>Figma</span><span>·</span>
+      <span>Web3</span><span>·</span><span>Telegram Bots</span><span>·</span><span>UI/UX</span><span>·</span>
+      <span>HTML5</span><span>·</span><span>CSS3</span><span>·</span><span>JavaScript</span><span>·</span>
+      <span>Three.js</span><span>·</span><span>React</span><span>·</span><span>Figma</span><span>·</span>
+      <span>Web3</span><span>·</span><span>Telegram Bots</span><span>·</span><span>UI/UX</span><span>·</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <p class="eyebrow reveal">УСЛУГИ</p>
+      <h2 class="reveal">Что мы делаем</h2>
+    </div>
+
+    <div class="service reveal">
+      <span class="service__num">01</span>
+      <h3>Веб-дизайн</h3>
+      <p>Айдентика, UI-киты и прототипы, которые ощущаются премиально с первого экрана.</p>
+    </div>
+    <div class="service reveal">
+      <span class="service__num">02</span>
+      <h3>Разработка сайтов</h3>
+      <p>Быстрые, адаптивные сайты на чистом коде — без лишнего веса и раздутых фреймворков.</p>
+    </div>
+    <div class="service reveal">
+      <span class="service__num">03</span>
+      <h3>UI/UX для приложений</h3>
+      <p>Интерфейсы, которые не нужно объяснять пользователю — понятны с первого касания.</p>
+    </div>
+    <div class="service reveal">
+      <span class="service__num">04</span>
+      <h3>Web3 / DeFi продукты</h3>
+      <p>Интерфейсы для протоколов и крипто-проектов, где решают доверие и скорость.</p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="eyebrow reveal">ИЗБРАННОЕ</p>
+      <h2 class="reveal">Последние работы</h2>
+    </div>
+
+    <div class="work__grid">
+      <article class="work-card reveal" data-speed="0.15">
+        <div class="work-card__visual work-card__visual--detailing"></div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Landing Page</span>
+          <h3>Detailing Studio</h3>
+          <p>Тёмный графит, хром и один плавный скролл вместо тысячи слов.</p>
+        </div>
+      </article>
+
+      <article class="work-card reveal" data-speed="0.3">
+        <div class="work-card__visual work-card__visual--defi"></div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Brand &amp; Product</span>
+          <h3>DeFi Protocol</h3>
+          <p>Лунная тема, 3D-сцена и интерфейс, которому веришь с первого взгляда.</p>
+        </div>
+      </article>
+
+      <article class="work-card reveal" data-speed="0.15">
+        <div class="work-card__visual work-card__visual--bot"></div>
+        <div class="work-card__body">
+          <span class="work-card__tag">Bot &amp; Dashboard</span>
+          <h3>Web3 Community Tool</h3>
+          <p>Модерация, алерты по кошелькам и подписки — в одном лёгком инструменте.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section-head">
+      <p class="eyebrow reveal">ПРОЦЕСС</p>
+      <h2 class="reveal">Как мы работаем</h2>
+    </div>
+
+    <div class="process__line" id="processLine">
+      <div class="process__fill" id="processFill"></div>
+    </div>
+
+    <div class="process__steps">
+      <div class="process__step reveal">
+        <span class="process__num">01</span>
+        <h4>Бриф</h4>
+        <p>Разбираем задачу, аудиторию и вайб продукта.</p>
+      </div>
+      <div class="process__step reveal">
+        <span class="process__num">02</span>
+        <h4>Дизайн</h4>
+        <p>Собираем визуальный язык и прототип в Figma.</p>
+      </div>
+      <div class="process__step reveal">
+        <span class="process__num">03</span>
+        <h4>Разработка</h4>
+        <p>Вёрстка, анимации, адаптив под все экраны.</p>
+      </div>
+      <div class="process__step reveal">
+        <span class="process__num">04</span>
+        <h4>Запуск</h4>
+        <p>Деплой, тесты, передача проекта в руки клиента.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="eyebrow reveal">КОНТАКТЫ</p>
+    <h2 class="contact__title reveal">Готовы обсудить<br>ваш проект</h2>
+    <a href="mailto:hello@prowebteam.dev" class="btn btn--primary btn--large reveal">Написать нам</a>
+    <div class="contact__links reveal">
+      <a href="#" target="_blank" rel="noopener">Telegram</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">Behance</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> PRO WEB TEAM</span>
+  <span>Kharkiv, Ukraine</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
