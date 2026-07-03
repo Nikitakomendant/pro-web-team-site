@@ -55,8 +55,8 @@
   const processSection = document.getElementById('process');
   const processFill = document.getElementById('processFill');
 
-  /* ---------- work card parallax ---------- */
-  const workVisuals = document.querySelectorAll('.work-card__visual');
+  /* ---------- parallax layers (work cards + laptop scene) ---------- */
+  const parallaxEls = document.querySelectorAll('.parallax-layer, .work-card__visual');
 
   /* ---------- hero orb parallax ---------- */
   const orb = document.getElementById('orb');
@@ -89,9 +89,10 @@
         orb.style.transform = `translate(-50%, calc(-50% + ${scrollY * 0.15}px))`;
       }
 
-      /* work card parallax */
-      workVisuals.forEach(el => {
-        const speed = parseFloat(el.closest('.work-card').dataset.speed) || 0.15;
+      /* parallax layers — each element moves at its own speed */
+      parallaxEls.forEach(el => {
+        const speedSource = el.dataset.speed ? el : el.closest('[data-speed]');
+        const speed = parseFloat(speedSource?.dataset.speed) || 0.15;
         const rect = el.getBoundingClientRect();
         const centerOffset = rect.top - window.innerHeight / 2;
         el.style.transform = `translateY(${centerOffset * speed * -0.15}px)`;
